@@ -3,15 +3,17 @@ layout: default
 ---
 
 <div class="content">
-{{ content }}
+  <div class="home">
+  {{ content }}
 
-  <div class="list-content-box">
-    <h2>Recent Posts</h2>
-    <hr>
-      <ul class="posts-list">
-          {% for post in site.posts limit:3 %}
-            {% include post_list.html %}
-          {% endfor %}
-      </ul>
+    <div class="list-content-box">
+      <h2>Recent Posts</h2>
+      <hr>
+        <ul class="posts-list">
+            {% for post in site.posts limit:3 %}
+              {% include post_list.html %}
+            {% endfor %}
+        </ul>
+    </div>
   </div>
 </div>

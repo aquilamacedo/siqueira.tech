@@ -1,9 +1,10 @@
 <li>
   <h2>
-      <a href="{{ site.url }}{{ post.url }}" class="post-title">
-      <span>{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+    <a href="{{ site.url }}{{ post.url }}" class="post-title">
+      <div class="ca-content">
+        <h2 class="ca-main">{{ post.title }}</h2>
+        <h3 class="ca-sub">{{ post.date | date: '%d %b %Y' }}</h3>
+      </div>
     </a>
-    <br>
-    <span class="date">{{ post.date | date: '%d %b %Y' }}</span>
   </h2>
 </li>

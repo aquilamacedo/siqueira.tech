@@ -18,7 +18,10 @@ h1 {
   margin: 2px;
   font-family: georgia;
 }
+.container h2 {
+  font-family: LiberationMonoRegular;
 
+}
 .container {
   display: grid;
   grid-template-columns: 80% auto;
